@@ -1,0 +1,12 @@
+Technical Memorandum: Superconducting Transmon Qubit Coherence Metrics
+Date: October 2026
+Author: Quantum Hardware Group
+
+1. Executive Summary
+Recent fabrication advances in tantalum-based superconducting transmon architectures demonstrate marked suppression of dielectric loss. Relaxation time T1 values have been systematically measured exceeding 300 microseconds in multi-qubit planar configurations.
+
+2. Dephasing and Ramsey Coherence
+Pure dephasing times (T_phi) show strong resilience against low-frequency flux noise when transmons are biased at the flux-insensitive sweet spot. Ramsey coherence times T2* consistently exceed 180 microseconds across 64-qubit test arrays.
+
+3. Fault-Tolerant Threshold Implications
+The observed two-qubit gate fidelities of 99.85% surpass the theoretical fault-tolerance threshold required for surface code quantum error correction. The remaining dominant error mechanism stems from cosmic ray burst events inducing quasiparticle poisoning across the silicon substrate.
