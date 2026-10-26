@@ -20,6 +20,7 @@ desktop/dist-ssr/
 
 # Tauri
 desktop/src-tauri/target/
+desktop/src-tauri/resources/
 
 # SQLite & Local data
 *.db

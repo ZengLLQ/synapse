@@ -40,7 +40,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
           cache-dependency-path: desktop/package-lock.json
 
@@ -59,6 +59,10 @@ jobs:
       - name: Install desktop dependencies
         working-directory: ./desktop
         run: npm ci
+
+      - name: Run Desktop & Bundler Unit Tests
+        working-directory: ./desktop/src-tauri
+        run: cargo test
 
       - name: Build Tauri Desktop Application (CI Artifacts)
         if: "!startsWith(github.ref, 'refs/tags/v')"

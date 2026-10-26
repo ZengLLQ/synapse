@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build:resources": "node ../scripts/sync-backend-resources.js",
+    "build": "node ../scripts/sync-backend-resources.js && tsc && vite build",
     "preview": "vite preview",
     "tauri": "tauri"
   },
