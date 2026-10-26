@@ -20,7 +20,8 @@ desktop/dist-ssr/
 
 # Tauri
 desktop/src-tauri/target/
-desktop/src-tauri/resources/
+desktop/src-tauri/resources/*
+!desktop/src-tauri/resources/.gitkeep
 
 # SQLite & Local data
 *.db

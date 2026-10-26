@@ -60,6 +60,10 @@ jobs:
         working-directory: ./desktop
         run: npm ci
 
+      - name: Prepare desktop resources
+        working-directory: ./desktop
+        run: npm run build:resources
+
       - name: Run Desktop & Bundler Unit Tests
         working-directory: ./desktop/src-tauri
         run: cargo test
